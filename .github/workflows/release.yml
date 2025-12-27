@@ -28,13 +28,6 @@ jobs:
         # uv 会自动生成 .tar.gz (sdist) 和 .whl (wheel)
         run: uv build
 
-      - name: Check package metadata
-        # 替代 twine check，验证构建出的包是否符合规范
-        run: |
-          uv pip install inspect4py  # 示例：可选的元数据检查工具
-          # 或者简单的文件存在性检查
-          ls -l dist/
-
     #   - name: Publish to PyPI
     #     env:
     #       # 必须在 GitHub Repo Settings -> Secrets 中配置此 Token
