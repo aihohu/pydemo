@@ -23,7 +23,6 @@
 curl -LsSf https://astral.sh/uv/install.sh | sh
 # Windows
 powershell -c "irbr https://astral.sh/uv/install.ps1 | iex"
-
 ```
 
 ### 2. 初始化环境
@@ -42,7 +41,6 @@ uv sync
 
 ```bash
 fastapi dev app/main.py
-
 ```
 
 访问 API 文档：[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
